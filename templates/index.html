@@ -11,6 +11,8 @@
     <meta name="description" content="{{ config.description }}">
     <meta property="twitter:card" content="summary" />
     <meta property="og:title" content="{% block og_title %}{{ config.title }}{% endblock og_title %}" />
+    <meta property="og:description" content="{% block og_description %}{{ config.description }}{% endblock og_description %}" />
+    <meta property="og:image" content="{{ get_url(path="icon.png", trailing_slash=false) }}"/>
 
     <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
 
