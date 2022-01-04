@@ -10,6 +10,7 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <meta name="description" content="{{ config.description }}">
     <meta property="twitter:card" content="summary" />
+    <meta property="og:title" content="{% block og_title %}{{ config.title }}{% endblock og_title %}" />
 
     <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
 
